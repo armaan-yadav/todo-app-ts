@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Task List</title>
+  </head>
+  <body>
+    <section
+      class="h-screen w-screen bg-gray-700 flex items-center gap-10 flex-col px-[5rem]"
+    >
+      <h1 class="text-5xl font-bold text-slate-50 text-center w-full">
+        Task Manager
+      </h1>
+      <div class="flex items-center justify-center">
+        <input
+          type="text"
+          name="task_input"
+          class="task-inp px-4 py-2 outline-none"
+          placeholder="Add Task"
+        />
+        <button
+          class="task-add bg-gray-900 text-slate-400 text-2xl rounded-lg px-4 py-2 outline-none"
+        >
+          Add Task
+        </button>
+      </div>
+      <div class="task-list bg-pink-300">
+        <div class="task flex text-2xl gap-4">
+          <input type="checkbox" class="task-checkbox" />
+          <h2 class="task-title text-slate-50">Task Title</h2>
+          <button class="task-delete text-slate-900">Delete</button>
+        </div>
+        <div class="task flex text-2xl gap-4">
+          <input type="checkbox" class="task-checkbox" />
+          <h2 class="task-title text-slate-50">Task Title</h2>
+          <button class="task-delete text-slate-900">Delete</button>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
